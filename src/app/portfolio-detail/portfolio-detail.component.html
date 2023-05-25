@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>{{data?.title}}</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Tech Stack</h3>
+  <p>{{data?.techStack}}</p>
+  <h3>Info</h3>
+  <ul>
+    <li *ngFor="let item of data?.info">
+        {{item}}
+    </li>
+  </ul>
+  <h3>Images:</h3>
+  <div class="dialog-img-list" [class.invisible]="data?.hiddenImg">
+    <img *ngFor="let img of data?.images" mat-card-image [src]="img" alt="">
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
