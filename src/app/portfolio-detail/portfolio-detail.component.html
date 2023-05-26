@@ -1,16 +1,34 @@
 <h2 mat-dialog-title>{{data?.title}}</h2>
+<hr>
 <mat-dialog-content class="mat-typography">
-  <h3>Tech Stack</h3>
-  <p>{{data?.techStack}}</p>
-  <h3>Info</h3>
-  <ul>
-    <li *ngFor="let item of data?.info">
-        {{item}}
-    </li>
-  </ul>
-  <h3>Images:</h3>
-  <div class="dialog-img-list" [class.invisible]="data?.hiddenImg">
-    <img *ngFor="let img of data?.images" mat-card-image [src]="img" alt="">
+  <div class="dialog-content-section mb-3">
+    <label class="dialog-content-label">Tech stack:</label>
+    <p>{{data?.techStack}}</p>
+  </div>
+  <div class="dialog-content-section mb-3">
+    <label class="dialog-content-label">Info:</label>
+    <ul>
+      <li *ngFor="let item of data?.info">
+          {{item}}
+      </li>
+    </ul>
+  </div>
+  <div class="dialog-content-section mb-3">
+    <label class="dialog-content-label">Repo:</label>
+    <ng-container *ngIf="data?.repoLink; else showNoRepo">
+      <p>
+          <a [href]="data?.repoLink" target="_blank">{{data?.repoLink}}</a>
+      </p>
+    </ng-container>
+    <ng-template #showNoRepo>
+      <p>{{data?.repoLink || 'Private business account'}}</p>
+    </ng-template>
+  </div>
+  <div class="dialog-content-section mb-3">
+    <label class="dialog-content-label">Images:</label>
+    <div class="dialog-img-list" [class.invisible]="data?.hiddenImg">
+      <img *ngFor="let img of data?.images" mat-card-image [src]="img" alt="">
+    </div>
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

@@ -1,5 +1,14 @@
-img {
-    width: 70rem;
-    margin: 0 auto 2rem;
-    display: block;
+
+.dialog-content-label {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+.dialog-img-list {
+    margin-top: 1.5rem;
+    img {
+        width: 70rem;
+        margin: 0 auto 2rem;
+        display: block;
+    }
 }
