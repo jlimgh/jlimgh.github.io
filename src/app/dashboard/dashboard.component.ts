@@ -12,16 +12,6 @@ export class DashboardComponent implements OnInit {
 
   portfolioSource = [
     {
-      name: "Portfolio",
-      title: 'Website',
-      img: "../../assets/portfolio1.png",
-      altImg: "Portfolio Website",
-      imgLogo: null,
-      altImgLogo: null,
-      desc: `This portfolio website was created with Angular and Material`,
-      projectId: 'portfolio'
-    },
-    {
       name: "loanDepot",
       title: 'Software Engineer',
       img: "../../assets/loandepot-card-portfolio.png",
