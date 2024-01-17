@@ -1,0 +1,20 @@
+
+<div class="portfolio-card-section d-flex justify-content-center flex-wrap">
+    <mat-card *ngFor="let item of portfolioSource"
+    (click)="openDialog(item.projectId)" class="portfolio-card mat-elevation-z2">
+        <mat-card-header>
+            <div mat-card-avatar class="portfolio-header-image">
+                <img *ngIf="item?.imgLogo" [src]="item?.imgLogo" [alt]="item?.altImgLogo">
+                <img *ngIf="!item?.imgLogo">
+            </div>
+            <mat-card-title>{{item?.name}}</mat-card-title>
+            <mat-card-subtitle>{{item?.title}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="item?.img" [alt]="item?.altImg">
+        <mat-card-content>
+            <p>
+                {{item?.desc}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,17 @@
+<mat-card class="card-wide mat-elevation-z2 mb-2">
+    <mat-card-header>
+        <mat-card-title>{{data?.dateRange}}</mat-card-title>
+        <mat-card-subtitle>
+            <span class="fw-bold pe-1">{{data?.company}}</span>
+            <span *ngIf="data?.position"> | </span>
+            <span class="ps-1">{{data?.position}}</span>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ul>
+            <li *ngFor="let bulletPoint of data?.bulletPoints">
+                {{bulletPoint}}
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>
