@@ -6,14 +6,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule}  from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { CardWideComponent } from './card-wide/card-wide.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    PortfolioDetailComponent
+    PortfolioDetailComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutComponent,
+    CardWideComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

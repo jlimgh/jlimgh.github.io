@@ -1,0 +1,24 @@
+<div class="container about-container">
+    <div class="bio mb-4">
+        <div class="row">
+            <div class="col-md-8 col-lg-9">
+                <p><b>Email: </b><a href="mailto:jefflim.dev@gmail.com">jefflim.dev@gmail.com</a></p>
+                <p><b>Location: </b>Interested in roles that are remote or within 30 miles of Cerritos, CA</p>
+                <p>
+                    I'm a front-end engineer with experience developing web apps and UI components. I'm always looking to improve and be more rounded in all stages of the web development cycle. I enjoy learning new technolgies, playing sports (struggling at golf), and spending time with friends and family over good food and drinks. 
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-3 d-flex align-items-center justify-content-md-center">
+                <div class="resume-btn">
+                    <a class="btn btn-secondary" target="_self" href="../../assets/jlim-resume.pdf" download="jlim-resume.pdf">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume-cards">
+        <app-card-wide 
+            *ngFor="let cardInfo of resumeData"
+            [data]="cardInfo">
+        </app-card-wide>
+    </div>
+</div>

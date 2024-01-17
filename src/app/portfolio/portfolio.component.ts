@@ -4,13 +4,23 @@ import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-portfolio',
+  templateUrl: './portfolio.component.html',
+  styleUrls: ['./portfolio.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class PortfolioComponent implements OnInit {
 
   portfolioSource = [
+    {
+      name: "Portfolio",
+      title: 'Website',
+      img: "../../assets/portfolio1.png",
+      altImg: "Personal Website",
+      imgLogo: null,
+      altImgLogo: null,
+      desc: `Personal website hosted on Github`,
+      projectId: 'portfolio'
+    },
     {
       name: "loanDepot",
       title: 'Software Engineer',
@@ -18,7 +28,7 @@ export class DashboardComponent implements OnInit {
       altImg: "loadDepot Website",
       imgLogo: "../../assets/loandepot-logo.svg",
       altImgLogo: "loanDopot Logo",
-      desc: `Supported development of loanDepot’s full catalog of pages and internal tools utilizing Angular, Jamstack, and C#`,
+      desc: `Web development of loanDepot’s full catalog of pages and internal tools utilizing Angular, Jamstack, and C#`,
       projectId: 'loanDepot'
     },
     {
@@ -28,7 +38,7 @@ export class DashboardComponent implements OnInit {
       altImg: "Gojji Workqueue",
       imgLogo: "../../assets/gojji-logo.svg",
       altImgLogo: "Gojji Logo",
-      desc: `Front-end development of a SaaS healthcare app that strives to manage chronic conditions easily.`,
+      desc: `Front-end development of a SaaS healthcare platform that manages patient progress - includes agent workflows, workqueues, and dashboards`,
       projectId: 'gojjiHealth',
     },
     {
@@ -70,7 +80,7 @@ export class DashboardComponent implements OnInit {
       images: ['../../assets/portfolio1.png'],
       repoLink: 'https://github.com/jlimgh/jlimgh.github.io',
       info: [
-        `Portfolio website created with Angular and Material`,
+        `Portfolio website`,
       ]
     },
     gojjiHealth: {
@@ -134,7 +144,7 @@ export class DashboardComponent implements OnInit {
     },
     specialty: {
       title: 'Specialty Pharmacy',
-      techStack: 'Angular 4, Bootstrap, Node.js, MongoDB',
+      techStack: 'Angular, Bootstrap, Node.js, MongoDB',
       info: [
         'SaaS for the use of pharmacists and clinicians to help patients',
         'Implemented dashboard requirements for patient features and user workflows',
