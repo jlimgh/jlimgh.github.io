@@ -70,7 +70,27 @@ export class PortfolioComponent implements OnInit {
       altImgLogo: "Specialty Logo",
       desc: `Specialty Pharmacy SaaS pilot for the use of pharmacists and clinicians to help patients`,
       projectId: 'specialty'
-    }
+    },
+    {
+      name: "Gift List",
+      title: 'Project',
+      img: "../../assets/giftlist1.png",
+      altImg: "Gift List",
+      imgLogo: null,
+      altImgLogo: null,
+      desc: `React/Redux app for adding and searching gifts and calculating the total`,
+      projectId: 'giftlist'
+    },
+    {
+      name: "Moodboard",
+      title: 'Project',
+      img: "../../assets/moodboard1.png",
+      altImg: "Moodboard Albums",
+      imgLogo: null,
+      altImgLogo: null,
+      desc: `React/Redux app for adding users, moodboard albums, and photos`,
+      projectId: 'moodboard'
+    },
   ]
 
   projectData: any = {
@@ -156,6 +176,27 @@ export class PortfolioComponent implements OnInit {
         '../../../assets/specialty2.png',
         '../../../assets/specialty3.png',
         '../../../assets/specialty4.png'
+      ]
+    },
+    giftlist: {
+      title: 'Gift List Calculator',
+      techStack: 'React, Redux, Bulma',
+      info: [
+        'Users can add gifts from sender and it will show the total amount',
+        'Search feature and duplicate gift notification'
+      ],
+      images: [
+        '../../../assets/giftlist1.png'
+      ]
+    },
+    moodboard: {
+      title: 'Moodboard Album',
+      techStack: 'React, Redux, Tailwind',
+      info: [
+        'Users can have multiple albums, and each album can have multiple moodboard photos',
+      ],
+      images: [
+        '../../../assets/moodboard1.png'
       ]
     }
   }
