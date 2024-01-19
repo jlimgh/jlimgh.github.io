@@ -50,6 +50,20 @@ export class AboutComponent implements OnInit {
         "Utilized Observables and RxJS for component architecture and state management with one-way data flow.",
         "Collaborated with backend engineers to consume RESTful APIs with Node.js",
       ]
+    },
+    {
+      dateRange: 'Projects',
+      company: null,
+      position: null,
+      bulletPoints: [
+        "Gojji - Healthcare web app showcasing dashboards, work queues, and data visualization for workflow mgmt",
+        "Specialty - Pharmacy driven dashboard for medical flows regarding patient health and medication history",
+        "Bloom - Plant monitoring app keeping track of multiple plant’s water moisture, temperature, and light levels",
+        "Tee Time Getter - Chrome ext. to obtain golf tee times utilizing extension documentation - Vanilla JS. ",
+        "Task Postings - Pilot web app for side gig posts for posters and workers - Angular, Material, MongoDB",
+        "Mood board creator - Generate users and mood board albums for photos - React.js, Redux, Tailwind",
+        "Gift Tracker - Users can add and search gifts. WIll show total amount - React.js, Redux, Bulma"
+      ]
     }
   ]
   constructor() { }
