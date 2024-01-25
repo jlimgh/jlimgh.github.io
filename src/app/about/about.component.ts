@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
       company: 'Freelance',
       position: 'Front-End Engineer',
       bulletPoints: [
-        "Collaborated with cross functional teams on various projects and developed web apps for clients utilizing different technologies including Javascript, Typescript, JS frameworks (Angular, React), Bootstrap, Node.js, and AWS"
+        "Collaborated with cross functional teams on various projects and developed web apps for clients utilizing different technologies including Javascript, Typescript, modern JS frameworks (Angular, React), Bootstrap, Node.js, and AWS"
       ]
     },
     {
@@ -30,10 +30,10 @@ export class AboutComponent implements OnInit {
       company: 'loanDepot',
       position: 'Software Engineer',
       bulletPoints: [
-        "Executed web development plans through the CI/CD pipeline for production success for 2 million monthly web visitors.",
-        "Improved loanDepot's catalog of web apps by implementing Angular components and responsive design, including Bootstrap, Material, custom utility classes and the grid system to meet project requirements.",
-        "Created Angular and C#  features for Kentico CMS users based on cookie and local storage data.",
-        "Refactored codebase for DRY (Don't Repeat Yourself) development and decoupled code into libraries.",
+        "Executed web requirements through the CI/CD pipeline for production success for 2 million monthly online visitors, contributing to the brainstorming and development of these features.",
+        "Improved and solved UI issues throughout loanDepot's catalog of web apps by implementing component logic and responsive design, including Bootstrap, Material, custom utility classes.",
+        "Created Angular directives and C# features for Kentico CMS users based on cookie and local storage data, automating manual work into functional features.",
+        "Developed tools and reusable UI features (Angular/TypeScript) for internal NPM libraries, focusing on stylesheets, custom components, reactive forms, and reactive state management for DRY (Don't Repeat Yourself) development.",
         "Fulfilled HELOC UI launch requirements in a tight schedule working with designers and team leads."
       ]
     },
@@ -43,8 +43,8 @@ export class AboutComponent implements OnInit {
       position: 'Front-End Engineer',
       bulletPoints: [
         "Key developer in building the front-end Angular web app for the production launch, resulting in thousands of members for its health care platform.",
-        "Developed complex SaaS dashboards, data visualization tools, and work queue UI modules for both customer and business use.",
-        "Implemented product scans and shipment workflow helping to increase revenue year after year.",
+        "Created complex SaaS dashboards, data visualization tools, and work queue UI modules from design mockups for both customer and business use.",
+        "Developed the UI code for shipment workflows and product scans for thousands of orders, increasing efficiency and volume.",
         "Customized intricate graphs and UI components for various data visualization tools for user analyzation.",
         "Praised for taking ownership of the front-end development and getting involved in critical requirements.",
         "Utilized Observables and RxJS for component architecture and state management with one-way data flow.",
