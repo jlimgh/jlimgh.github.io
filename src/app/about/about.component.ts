@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
       company: 'Freelance',
       position: 'Front-End Engineer',
       bulletPoints: [
-        "Collaborated with cross functional teams on various projects and developed web apps for clients utilizing different technologies including Javascript, Typescript, modern JS frameworks (Angular, React), Bootstrap, Node.js, and AWS"
+        "Collaborated extensively with cross-functional teams on diverse projects, contributing to the development of web applications for clients. Applied a range of technologies, including JavaScript, TypeScript, modern JS frameworks, Bootstrap, Node.js, and AWS, to deliver versatile and impactful solutions."
       ]
     },
     {
@@ -30,10 +30,10 @@ export class AboutComponent implements OnInit {
       company: 'loanDepot',
       position: 'Software Engineer',
       bulletPoints: [
-        "Executed web requirements through the CI/CD pipeline for production success for 2 million monthly online visitors, contributing to the brainstorming and development of these features.",
-        "Improved and solved UI issues throughout loanDepot's catalog of web apps by implementing component logic and responsive design, including Bootstrap, Material, custom utility classes.",
-        "Created Angular directives and C# features for Kentico CMS users based on cookie and local storage data, automating manual work into functional features.",
-        "Developed tools and reusable UI features (Angular/TypeScript) for internal NPM libraries, focusing on stylesheets, custom components, reactive forms, and reactive state management for DRY (Don't Repeat Yourself) development.",
+        "Executed web requirements in compliance with CI/CD practices within the Azure pipeline, ensuring smooth deployment for a user base of 2 million monthly online visitors.  Actively contributed to the ideation and development processes of features, fostering a collaborative environment for innovative solutions.",
+        "Enhanced and resolved UI challenges across loanDepot's suite of web applications by deploying Typescript component logic and responsive design strategies, including Bootstrap.js, Material, and custom utility classes.",
+        "Utilized state, cookie, and local storage data to implement automated functionalities within the Jamstack ecosystem, employing Angular, Kentico CMS, and C# backend services. Successfully transformed manual tasks into streamlined features, resulting in heightened efficiency and an improved user experience.",
+        "Engineered tools and reusable UI features using Angular, TypeScript, and SCSS within internal NPM libraries. Contributions encompassed updating stylesheets, developing custom components, implementing reactive forms, and establishing effective state management to uphold DRY (Don't Repeat Yourself) development practices.",
         "Fulfilled HELOC UI launch requirements in a tight schedule working with designers and team leads."
       ]
     },
@@ -42,13 +42,11 @@ export class AboutComponent implements OnInit {
       company: 'SevenLogics',
       position: 'Front-End Engineer',
       bulletPoints: [
-        "Key developer in building the front-end Angular web app for the production launch, resulting in thousands of members for its health care platform.",
-        "Created complex SaaS dashboards, data visualization tools, and work queue UI modules from design mockups for both customer and business use.",
-        "Developed the UI code for shipment workflows and product scans for thousands of orders, increasing efficiency and volume.",
-        "Customized intricate graphs and UI components for various data visualization tools for user analyzation.",
-        "Praised for taking ownership of the front-end development and getting involved in critical requirements.",
-        "Utilized Observables and RxJS for component architecture and state management with one-way data flow.",
-        "Collaborated with backend engineers to consume RESTful APIs with Node.js",
+        "Led the front-end development initiative for a chronic disease management app, playing a pivotal role in its successful production launch. This effort led to the acquisition of tens of thousands of members for the healthcare platform, contributing significantly to the notable increase in revenue.",
+        "Engineered intricate SaaS dashboards, data visualization tools, and work queue UI modules, improving response times and analytical capabilities for users by 30%. Employed a tech stack of Angular, Bootstrap, SCSS, Node.js and Highcharts.",
+        "Executed UI code development for shipment workflows and product scans across thousands of orders, significantly enhancing operational efficiency and order processing volume.",
+        "Leveraging responsive web design principles, I developed a mobile web app empowering users to assess their condition and input responses, facilitating the generation of a personalized game plan tailored to their health.",
+        "Praised for taking ownership of the front-end development and getting involved in critical requirements."
       ]
     },
     {

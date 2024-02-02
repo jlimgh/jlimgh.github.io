@@ -11,16 +11,16 @@ import { MatDialog } from '@angular/material/dialog';
 export class PortfolioComponent implements OnInit {
 
   portfolioSource = [
-    {
-      name: "Portfolio",
-      title: 'Website',
-      img: "../../assets/portfolio1.png",
-      altImg: "Personal Website",
-      imgLogo: null,
-      altImgLogo: null,
-      desc: `Personal website hosted on Github`,
-      projectId: 'portfolio'
-    },
+    // {
+    //   name: "Portfolio",
+    //   title: 'Website',
+    //   img: "../../assets/portfolio1.png",
+    //   altImg: "Personal Website",
+    //   imgLogo: null,
+    //   altImgLogo: null,
+    //   desc: `Personal website hosted on Github`,
+    //   projectId: 'portfolio'
+    // },
     {
       name: "loanDepot",
       title: 'Software Engineer',
@@ -91,6 +91,16 @@ export class PortfolioComponent implements OnInit {
       desc: `React/Redux app for adding users, moodboard albums, and photos`,
       projectId: 'moodboard'
     },
+    {
+      name: "Bloom",
+      title: "Project",
+      img: "../../assets/bloom1-min.png",
+      altImg: "Bloom project",
+      imgLogo: null,
+      altImgLogo: null,
+      desc: `Monitor multiple  plant’s health by receiving live updates of the plant’s water moisture, temperature, and light levels`,
+      projectId: 'bloom'
+    }
   ]
 
   projectData: any = {
@@ -198,7 +208,21 @@ export class PortfolioComponent implements OnInit {
       images: [
         '../../../assets/moodboard1.png'
       ]
-    }
+    },
+    bloom: {
+      title: 'loanDepot',
+      techStack: 'AngularJS, Node.js, MySQL, Bootstrap',
+      images: [
+        '../../../assets/bloom1-min.png',
+        '../../../assets/bloom2-min.png',
+        '../../../assets/bloom3-min.png',
+      ],
+      info: [
+        `Implemented RESTful API calls to m2x server and and rendered live data from microcontroller hardware.`,
+        `Created plant notification triggers from m2x server to notify users when plant status levels are in danger`,
+        `Incorporated Bootstrap and CSS to build overall user functionality design and responsiveness.`
+      ]
+    }, 
   }
 
   constructor(public dialog: MatDialog) { }
