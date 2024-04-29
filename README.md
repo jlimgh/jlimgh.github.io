@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Deploying on Github pages
 
-Run `ng build --output-path docs --base-href /angular-app` to export the build files into /docs folder so github can recognize the changes
+Run `ng build --output-path docs --base-href/jlimgh.github.io` to export the build files into /docs folder so github can recognize the changes
