@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CardWideComponent } from './card-wide/card-wide.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeComponent,
     AboutComponent,
     CardWideComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

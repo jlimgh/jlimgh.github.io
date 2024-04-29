@@ -1,20 +1,27 @@
 
-<div class="portfolio-card-section d-flex justify-content-center flex-wrap">
-    <mat-card *ngFor="let item of portfolioSource"
-    (click)="openDialog(item.projectId)" class="portfolio-card mat-elevation-z2">
-        <mat-card-header>
-            <div mat-card-avatar class="portfolio-header-image">
-                <img *ngIf="item?.imgLogo" [src]="item?.imgLogo" [alt]="item?.altImgLogo">
-                <img *ngIf="!item?.imgLogo">
-            </div>
-            <mat-card-title>{{item?.name}}</mat-card-title>
-            <mat-card-subtitle>{{item?.title}}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image [src]="item?.img" [alt]="item?.altImg">
-        <mat-card-content>
-            <p>
-                {{item?.desc}}
-            </p>
-        </mat-card-content>
-    </mat-card>
-</div>
+<section>
+    <h1 class="font-medium text-2xl mb-8 tracking-tighter">my projects</h1>
+    <p>
+        Some of the projects are from work and some are on my own time.
+    </p>
+    <hr class="my-4 border-neutral-100 dark:border-neutral-800" />
+    <div class="portfolio-card-section d-flex justify-content-center flex-wrap">
+        <mat-card *ngFor="let item of portfolioSource"
+        (click)="openDialog(item.projectId)" class="portfolio-card mat-elevation-z2">
+            <mat-card-header>
+                <div mat-card-avatar class="portfolio-header-image">
+                    <img *ngIf="item?.imgLogo" [src]="item?.imgLogo" [alt]="item?.altImgLogo">
+                    <img *ngIf="!item?.imgLogo">
+                </div>
+                <mat-card-title>{{item?.name}}</mat-card-title>
+                <mat-card-subtitle>{{item?.title}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="item?.img" [alt]="item?.altImg">
+            <mat-card-content>
+                <p>
+                    {{item?.desc}}
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>

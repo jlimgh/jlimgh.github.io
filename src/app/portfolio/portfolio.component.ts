@@ -42,6 +42,16 @@ export class PortfolioComponent implements OnInit {
       projectId: 'gojjiHealth',
     },
     {
+      name: "Referral app",
+      title: "Software Engineer",
+      img: "../../assets/referrals1.png",
+      altImg: "Referrals app dashboard",
+      imgLogo: null,
+      altImgLogo: null,
+      desc: `React referral system app to add and update users on their referral statuses`,
+      projectId: 'referrals',
+    },
+    {
       name: "Task Postings",
       title: 'Project',
       img: "../../assets/task-posting1.png",
@@ -125,24 +135,35 @@ export class PortfolioComponent implements OnInit {
         '../../../assets/gojji8.png'
       ],
       info: [
-        `Successfully led front-end development of Gojji's pilot launch consisting of 200 initial enrollments that led to a user base in the thousands`,
-        'Consistently met tight deadlines and solved critical requirements working with business analysts, designers, and project managers',
-        'Built SaaS dashboard and workqueue UI modules for both customer and business use, focusing on resuability and scalability',
-        'Used Reactive forms and state management through service Observables',
-        'Handled chaining multiple asyc calls through RxJS Observables',
+        `Directed front-end development crucial to its successful launch. Resulted in acquiring tens of thousands of members for the healthcare platform, substantially boosting revenue.`,
+          'Developed complex SaaS dashboards, data visualization tools, and UI modules, enhancing user response times and analytical capabilities by 30%. Utilized Angular, Bootstrap, SCSS, Node.js, and Highcharts.',
+          'Handled Reactive forms, state management, and async RESTful api through service RxJs and Observables',
+      ]
+    },
+    referrals: {
+      title: 'Referral app',
+      techStack: 'React, Node.js, MongoDB, Tailwind, Flowbite',
+      images: [
+        '../../../assets/referrals1.png',
+        '../../../assets/referrals2.png',
+        '../../../assets/referrals3.png',
+      ],
+      info: [
+        `Referral system to add and update users on their referral statuses`,
+        `Utilized React and RTK Query method to contruct dashboard and work queue components`,
       ]
     },
     loanDepot: {
       title: 'loanDepot',
-      techStack: 'Angular (updated), NX, Kentico, NGRX, Jamstack, Bootstrap, Material, C#, Azure pipelines',
+      techStack: 'Angular, TypeScript, NX, Kentico, NGRX, Jamstack, Bootstrap, Material, C#, Azure pipelines',
       images: [
         '../../../assets/loandepot-card-portfolio.png',
         '../../../assets/loandepot2.png'
       ],
       info: [
-        `Supported development of loanDepot’s full catalog of pages and internal tools utilizing Angular, Jamstack, and C#`,
-        `Built tools and UI features for internal NPM Libraries
-        regarding stylesheet, UI features, reactive forms, and reactive state management.`,
+        'Supported development of loanDepot’s full catalog of web applications and internal tools',
+        `Built tools and UI features for internal NPM Libraries regarding stylesheet, UI features, reactive forms, and reactive state management.`,
+          `Automated functionalities in Angular, leveraging state, cookie, and local storage data. Transformed manual tasks into streamlined features, enhancing efficiency and user experience.`
       ]
     }, 
     taskPostings: {

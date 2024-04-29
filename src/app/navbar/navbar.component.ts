@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  links: string[] = ['about', 'portfolio'];
+  links: string[] = ['home', 'work', 'portfolio'];
   constructor() { }
 
   ngOnInit(): void {

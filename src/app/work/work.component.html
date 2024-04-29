@@ -1,0 +1,14 @@
+<section>
+    <h1 class="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
+    <p>
+    On a mission to build web applications users love. Here's a
+    summary of my work so far.
+    </p>
+    <hr class="my-4 border-neutral-100 dark:border-neutral-800" />
+    <div class="resume-cards">
+        <app-card-wide 
+            *ngFor="let cardInfo of resumeData"
+            [data]="cardInfo">
+        </app-card-wide>
+    </div>
+</section>

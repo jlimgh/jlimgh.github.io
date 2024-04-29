@@ -1,24 +1,36 @@
-<div class="container about-container">
+<div class="container">
     <div class="bio mb-4">
         <div class="row">
-            <div class="col-md-8 col-lg-9">
-                <p><b>Email: </b><a href="mailto:jefflim.dev@gmail.com">jefflim.dev@gmail.com</a></p>
-                <p><b>Location: </b>Interested in roles that are remote or within 30 miles of Cerritos, CA</p>
-                <p>
-                    As a Front-End Engineer with 5+ years of experience, I excel in translating requirements into seamless and user-friendly interfaces. Proficient in JavaScript, HTML/CSS and responsive design, I am adept at leveraging modern JavaScript tools/frameworks such as Angular, React, and Node.js. One of my notable achievements includes leading the front-end development for a healthcare web platform, resulting in streamlined operations and the creation of a lucrative revenue stream. I am committed to continuous improvement and seek to enhance my skills across all stages of the web development cycle. Passionate about learning new technologies, I also enjoy sports, despite my struggles with golf, and value quality time with friends and family over good food and drinks.
+            <div class="col-12 mb-3">
+                <h1 class="mb-4">
+                    hey there! I'm Jeff 👋
+                </h1>
+                <p class="mb-3">
+                I'm a Front-End Engineer passionate about crafting intuitive digital experiences using modern JavaScript tools and frameworks. I was a key contributor for the front-end development at a startup, driving operational efficiency and revenue growth.
+                </p>
+                <p class="mb-3">
+                From dashboards to mobile web applications, I specialize in utilizing technologies like JavaScript, TypeScript, React, Next.js, Angular, and more to bring ideas to life.
+                </p>
+                <p class="mb-3">
+                Beyond coding, you'll find me cheering on my favorite sports teams, playing golf, or cherishing quality time with friends and family over good food and drinks.
+                </p>
+                <p class="mb-3">
+                As a lifelong learner, I'm always exploring new technologies and staying informed about the latest trends in web development. 
+                <!-- Check out some of my  -->
+                <!-- <a routerLink="/portfolio"
+                    routerLinkActive="active"
+                    class="inline font-weight-bold">
+                    work
+                </a>, and feel free to dive into the blogs that keep me inspired on this ever-changing journey. 
+                 -->
+                Let's connect and create something extraordinary together!
                 </p>
             </div>
-            <div class="col-md-4 col-lg-3 d-flex align-items-center justify-content-md-center">
-                <div class="resume-btn">
-                    <a class="btn btn-secondary" target="_self" href="../../assets/jlim-resume.pdf" download="jlim-resume.pdf">Download Resume</a>
-                </div>
+            <hr>
+            <div class="col-12">
+                <h4>Contact Info:</h4>
+                <p><b>Email: </b><a href="mailto:jefflim.dev@gmail.com">jefflim.dev@gmail.com</a></p>
             </div>
         </div>
-    </div>
-    <div class="resume-cards">
-        <app-card-wide 
-            *ngFor="let cardInfo of resumeData"
-            [data]="cardInfo">
-        </app-card-wide>
     </div>
 </div>
